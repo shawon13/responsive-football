@@ -48,7 +48,7 @@ nav ul li a{
     margin-right: 8px;
 }
 .header_info{
-    margin-top: 131px;
+    margin-top: 80px;
 }
 .header_bottom{
     display: grid;
@@ -80,8 +80,7 @@ nav ul li a{
     margin-top: 77px;
 }
 .header_img img{
-    width: 556px;
-    height: 438px;
+   width: 100%;
 }
 /* header start */
 /* players start */
@@ -92,6 +91,7 @@ nav ul li a{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-column-gap: 30px;
+    
 }
 .player{
     width: 330px;
@@ -125,6 +125,10 @@ nav ul li a{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-column-gap: 60px;
+    margin-top: 100px;
+}
+.highlight_info{
+    margin-top: 50px;
 }
 .highlight_title{
     font-size: 48px;
@@ -133,6 +137,9 @@ nav ul li a{
     color: #0A0826;
     font-family: 'Poppins', sans-serif;
     margin: 0;
+}
+.highlight_description{
+    margin-bottom: 30px;
 }
 .highlight_btn{
     background-color: #E02C6D;
@@ -149,24 +156,67 @@ nav ul li a{
 }
 /* highlight end */
 /* footer start */
-.footer_detils{
-    align-items: center;
+footer{
+    margin-top: 50px;
+}
+.footer_logo{
+    text-align: center;
+}
+.footer_icon{
+    text-align: center;
+    margin: 30px 0px;
+}
+.footer_copyright{
+    text-align: center;
 }
 .footer_logo img{
     width: 400px;
 }
 .footer_icon a{
-    width:32px ;
-    height:32px ;
+    font-size: 20px;
+    padding: 10px;
     background-color: hsla(226, 11%, 63%, 0.329);
     border-radius: 100%;
-    padding: 10px;
     margin: 5px;
+    color: #969BAB;
 }
 .footer_icon a i{
-    color: #969BAB;
+    width:32px ;
+    height:32px ;
 }
 .footer_copyright{
     margin-top: 30px;
 }
 /* footer end */
+/* responsive start */
+@media only screen and (max-width:688px){
+    .container{
+        width: 100%;
+    }
+    header{
+        padding: 10px;
+    }
+    .header_title{
+        font-size: 40px;
+        width: 100%;
+        line-height: 50px;
+    }
+    .header_info{
+        margin-top: 0px;
+    }
+    .header_bottom, .players, .highlight{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .highlight{
+        margin-top: 0px;
+    }
+    .highlight_title {
+        font-size: 32px;
+    }
+    .highlight_info {
+        width: 80%;
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+}
+/* responsive end */
